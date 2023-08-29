@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript table</title>
+    <STYLE>
+        table{
+            border:2px solid red;
+            margin:Auto;
+        }
+        th,td{
+            border:2px solid green;
+        }
+        td{
+            margin:2px;
+        }
+    </STYLE>
+</head>
+<body>
+           <table>
+            <caption>"DEMO TABLE"</caption>
+            <thead>
+               <tr rowspan="2">
+               <tr id="firstRow">
+                <th>NAME</th>
+                <th>ROLLNO</th>
+                <th>COURSE</th>
+               </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>'YOGITA'</td>
+                <td>'1905835'</td>
+                <td>'JS'</td>
+                </tr>
+                <tr>
+                    <td>'SONALI'</td>
+                    <td>'1905833'</td>
+                    <td>'JS</td>
+                </tr>
+
+
+            </tbody>
+           </table>
+           <script>
+            let v=document.body.firstElementChild;
+            console.log(v.rows);
+            console.log(v);
+            console.log(v.caption);
+            console.log(v.tBodies);
+            console.log(v.rows[0].rowIndex);
+            console.log(v.td.cellIndex);
+           </script>
+</body>
+</html>

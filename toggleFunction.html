@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOGGLE-FUNCTION</title>
+    <style>
+     #btn1{
+        background-color: red;
+        color:white;
+     }
+     .blk{
+        background-color: white;
+        color:black;
+     }
+    </style>
+</head>
+<body>
+    <button id='btn1' value="LOGIN" onclick="f1(this)">LOGIN</button>
+    <script>
+        function f1(event)
+        {
+            var v1=document.getElementById('btn1');
+            // console.log(event);
+            // console.log(event.value);
+            v1.classList.toggle("blk");
+        }
+    </script>
+</body>
+</html>

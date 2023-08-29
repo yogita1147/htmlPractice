@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>THIS IS HEADING</h1>
+        <p style="display:block;"id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias exercitationem pariatur odio! Maxime quo labore, est dolorem voluptate ratione eligendi commodi omnis sunt in inventore perspiciatis nemo? Voluptas voluptate doloremque aperiam officiis unde quos hic optio omnis non. Laborum, iste incidunt?</p>
+        <input type="button" value="hide/show" onclick="f1()">
+    </div>
+    <script>
+      function f1()
+      {
+        var val=document.getElementById('para1');
+        if(val.style.display=='block')
+        {
+            val.style.display='none';
+        }
+        else{
+            val.style.display='block';
+        }
+      }
+    </script>
+</body>
+</html>

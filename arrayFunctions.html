@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArrayFunctions</title>
+</head>
+<body>
+    <div id="cont1"></div>
+    <div id="cont2"></div>
+    <script>
+        const cars=['volvo','swift','alto'];
+        document.getElementById('cont1').innerHTML=cars.toString();
+        document.getElementById('cont2').innerHTML=cars.join('*');
+        const eat=['pizza','burger','coke','chips'];
+        let v1=eat.shift();
+        console.log(v1);
+        console.log(eat);
+
+        cars.unshift('qqq');
+        console.log(cars);
+        const a3=cars.concat(eat);
+        console.log(a3);
+        cars.splice(2,0,'audi','kia');
+        console.log(cars);
+        const car1=cars.slice(0,4);
+        console.log(car1);
+        console.log(car1.sort());
+        const arr2=[22,1,33,2,4,32,5];
+        
+        function f1(arr2)
+        {
+            return Math.max.apply(undefined,arr2);
+
+        }
+        var a5=f1(arr2);
+        console.log(a5);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATTERN</title>
+</head>
+<body>
+    <script>
+    var k=0;
+    var i;
+    var j;
+    var pattern='';
+    for(i=1;i<=7;i++)
+    {
+        if(i<=4)
+            
+       {
+        for(j=1;j<=i;j++)
+        { 
+            pattern+=j;
+        }//j=5
+        pattern+='\n';
+        }
+        else{
+            k=j-2;
+            while(k>=1){
+            for(j=1;j<=k;j++)
+            {
+                pattern+=j;
+            
+            }k--;
+            pattern+='\n';
+        }
+        }
+    
+    }
+    console.log(pattern);
+    </script>
+
+</body>
+</html>

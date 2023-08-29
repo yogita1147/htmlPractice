@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTLISTENER</title>
+</head>
+<body>
+    <input  id='btn1'type="button" value="Click Me">
+    <script>
+        x=function f1(e){alert('hello world 1')};
+        y=function f2(e){alert('hello world 2')}
+
+        let v1=prompt('Enter a number');
+        if(v1=='1')
+        {
+            document.getElementById('btn1').addEventListener('click',x);
+
+        }
+        else if(v1=='2')
+        {
+            btn1.addEventListener('click',y);
+        }
+      else{
+        btn1.addEventListener('click',x);
+        btn1.addEventListener('click',y);
+      }
+    </script>
+</body>
+</html>

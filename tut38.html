@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>....</title>
+    <style>
+        #navbar {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+
+        }
+
+        li {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- QUESTION ONE -->
+    <div>
+        <ul id="navbar">
+            <li>Home</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <!-- QUESTION 2 -->
+    <table>
+        <tr>
+            <th>heyyy</th>
+        </tr>
+        <tr>
+            <td>yogita</td>
+        </tr>
+    </table>
+
+    <!-- QUESTION 3 --> 
+    <div id="q3">
+        <span>1</span><span>2</span><span>3</span>
+    </div>
+    <script>
+        document.querySelector('#navbar').firstElementChild.style.color = 'red';
+        document.getElementById('q3').firstElementChild.style.color='green';
+        document.getElementById('q3').lastElementChild.style.color='green';
+
+        const coll=document.getElementsByTagName('li');
+        
+        console.log(typeof(coll));
+        Array.from(coll).forEach((ele)=>{ele.style.color='cyan'});
+    </script>
+</body>
+
+</html>

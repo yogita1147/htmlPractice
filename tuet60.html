@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tut60(Arrow Functions in Javascript)</title>
+</head>
+<body>
+    <script>
+        var arr=["11","22","33","44"];
+        for(element of arr){
+            console.log(element);
+        }
+
+        arr.forEach(function f1(element){console.log(element)});
+
+        // function without arrow function
+        function f1(){console.log("hey")};f1();
+
+        //function with arrow function
+        let greet=()=>{console.log("arrow ")};
+        greet();
+        setTimeout(()=>{console.log('happpy')},1000);
+
+        let sum=(a,b)=>a+b;
+
+        console.log(sum(20,30));
+
+
+
+        let obj={
+            'name':["y",'s','p','m'],
+            gow(){
+                this.name.forEach((student)=>{console.log(student)});
+            }
+        }
+        obj.gow();
+        
+    </script>
+</body>
+</html>

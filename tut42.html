@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+</head>
+<body>
+    <div class="container" data-game='mario' data-player='yogita' id="id1">
+        Hey THere I am Yogita Sharma...</div>
+    </div>
+    <script>
+        console.log(document.getElementById('id1').getAttribute('class'));
+        console.log(document.getElementById('id1').hasAttribute('class'));
+        document.getElementById('id1').setAttribute('style','background-color:red;');
+        document.getElementById('id1').setAttribute('class','p');
+        console.log(document.getElementById('id1').dataset);
+        console.log(document.getElementById('id1').dataset.game);
+        console.log(document.getElementById('id1').dataset.player);
+
+        
+        
+    </script>
+</body>
+</html>

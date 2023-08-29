@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <form>
+        <label for="inp1">
+           NAME
+        </label>
+        <input type="text" id='inp1' onfocus=f1(this) placeholder="Enter Your Name"><BR><br><br>
+
+        <label for="inp2">AGE
+            <input type="text" id='inp2' onblur=f1(this) oninput=f2(this) placeholder="Enter Your Age">
+        </label><br><br><br>
+        <select  id="select1" onchange="s1()">
+            <option>CPP</option>
+            <option>JAVA</option>
+            <option>PYTHON</option>
+        </select>
+    </form>
+    <span id="s1"></span>
+    <script>
+        function f1(event){
+          event.style.backgroundColor='blue';
+        }
+         function f2(event)
+         {
+            var v=event.value;
+           document.getElementById('s1').innerHTML=v;
+         }
+         function s1(event)
+         {
+           var k=document.getElementById('select1').value;
+           document.getElementById('s1').innerHTML=k;
+         }
+    </script>
+</body>
+</html>

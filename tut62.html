@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tut63.html(JSON TO STRINGIFY AN OBJECT)</title>
+</head>
+<body>
+    <script>
+        let Obj={
+           "Name":'yogita',
+           'age':21,
+           'qualification':'btech',
+           'school':'gmsss-21-a',
+        }
+          console.log(Obj);
+        let stringObj=JSON.stringify(Obj);
+        console.log(stringObj)
+
+
+        let str1=stringObj.replace('yogita','YOGITA');
+
+
+        let finalObj=JSON.parse(stringObj);
+        console.log(finalObj);
+    </script>
+</body>
+</html>

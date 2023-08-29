@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST1</title>
+</head>
+<style>
+    #button1{
+        background-color: red;
+        color:white;
+    
+    } 
+    .second{
+         background-color: white;
+         color:'black';
+    }
+
+</style>
+<body>
+    <input type="button" id='button1' onclick='f1(this)' value="LOGIN">
+    <script>
+        var v=0;
+      function f1(event)
+      {
+        this.toggleClass='second';
+        // // let btnVar=document.getElementById('button1');
+        // if(v==0)
+        // {
+        //     event.style.backgroundColor='white';
+        //     event.style.color='black';
+        //     v=1;
+            
+        // }
+        // else{
+        //     event.style.backgroundColor='red';
+        //     event.style.color='white';
+        //     v=0;
+        // }
+      }
+    </script>
+</body>
+</html>

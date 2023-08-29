@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .container{
+              background-color: rgb(187, 187, 113);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 500px;
+    
+        }
+        #form{
+            border:2px solid black;
+        }
+    </style>
+</head>
+
+<body><div class="container">
+    <form id="form">
+        <label for="inp1">
+            NAME
+        </label>
+        <input type="text" id="inp1" onfocus='blk(this)' onblur="nameVal()"><br><br><br>
+        <label for="inp2">CLASS</label>
+        <input type="text" id="inp2" onfocus='blk(this)' onblur="classVal()"><br><br><br>
+        <label for="inp3">
+            COURSE
+        </label><select id="inp3">
+            <option>CPP</option>
+            <option>JAVA</option>
+            <option>PYTHON</option>
+        </select>
+        <input type="submit" value="button" onclick="subFun()">
+    </form>
+</div>
+    <script>
+        function subFun() {
+
+
+            var p = document.getElementById('inp1').value;
+            var q = document.getElementById('inp2').value;
+            if (p == '' && q == '') { alert('please fill your name and class..'); return; }
+            if (p == '') { alert('Please fill your Name'); return; }
+            if (q == '') { alert('Please fill your Class'); return; }
+
+
+            console.log(document.getElementById('inp1').value);
+            console.log(document.getElementById('inp2').value);
+            console.log(document.getElementById('inp3').value);
+            console.log(typeof (p));
+            let a = 0;
+            for (element of p) {
+                if (element == '0' || element == '1' || element == '2' || element == '3' || element == '4' || element == '5' || element == '6' || element == '7' || element == '8' || element == '9') {
+                    a += 1;//alert('PLEASE ENTER VALID NAME');
+                    
+                }
+
+            }
+            var q = document.getElementById('inp2').value;
+            if (isNaN(q)) {
+                a += 1; //alert('PLEASE ENTER VALID CLASS'); return; 
+            }
+
+                if (a == 1) {
+                    alert('Kindly Check Your Name Or class'); return;
+                }
+                else {
+                    alert('Kindly Check Your Name and class'); return;
+                }
+
+                alert('hey ' + p);
+                if (isNaN(p) != false) { p.style.color = 'red'; return; }
+            }
+            function nameVal() {
+
+                var p = document.getElementById('inp1').value;
+                console.log(typeof (p));
+                console.log(p);
+                for (element of p) {
+                    if (element == '0' || element == '1' || element == '2' || element == '3' || element == '4' || element == '5' || element == '6' || element == '7' || element == '8' || element == '9') { document.getElementById('inp1').style.color = 'red'; }
+
+                }
+            }
+            function funcClear() {
+                alert('Please Fill up the Name');
+            }
+            function blk(element) {
+                element.style.color = 'black';
+            }
+
+            function classVal() {
+                var q = document.getElementById('inp2').value;
+                if (isNaN(q)) { document.getElementById('inp2').style.color = 'red'; return; }
+            }
+    </script>
+</body>
+
+</html>
